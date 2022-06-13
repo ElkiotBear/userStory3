@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from "next/link";
 import { Box, Alert, Collapse, IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 
@@ -25,11 +26,12 @@ const Warning = () => {
             </IconButton>
           }
         >
-          This project is deployed to Mumbai Testnet 022 Spring Chainlink
-          Hackathon, it is currently NOT SECURED FOR MAINNET LAUNCH. If you want
-          to participate as an early access tester for mainnet, contact{" "}
+          This project is deployed to Mumbai Testnet as an MVP for the 2022
+          Metaverse Hackathon, it is currently NOT SECURED FOR MAINNET LAUNCH.
+          If you want to participate as contributor or an early access tester,
+          contact{" "}
           <strong>
-            <a href="https://mail.google.com">brofundme0@gmail.com</a>
+            <Link href="/"> brofundme0@gmail.com</Link>
           </strong>
           {/* how to do with this email*/}
         </Alert>
